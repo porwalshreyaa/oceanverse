@@ -4,7 +4,7 @@ print()
 # 2. Take as input a number n
 # and print the square, cube and 2n
 # of the number (1 point).
-n1 = input("n: ")
+n1 = int(input("n: "))
 print(n1**2,"\n",n1**3,"\n",2*n1)
 print()
 # 3. Print the following using four print statements:
@@ -31,7 +31,7 @@ hobby = input("What's your favorite hobby? ")
 print()
 # 5. Understand how to use a if conditional in python. 
 # Ask the user to enter a number and check if the number is even or odd (1 point).
-num = input("number: ")
+num = int(input("number: "))
 if num%2 == 0:
     print(f"{num} is even")
 else:
@@ -40,7 +40,7 @@ print()
 # 6. Write a program to take as input a number n
 # and display the first n
 # natural numbers (1 point).
-n2 = input("number: ")
+n2 = int(input("number: "))
 for i in range(1,n2+1):
     print(i)
 print()
@@ -51,9 +51,9 @@ print()
 # Enter a value for b: 20
 # Output: 10 13 16 19
 # (1 point).
-a = input("Enter a value for a: ")
-d = input("Enter a value for d(diff): ")
-b = input("Enter a value for b: ")
+a = int(input("Enter a value for a: "))
+d = int(input("Enter a value for d(diff): "))
+b = int(input("Enter a value for b: "))
 if a<b:
     while a<=b:
         print(a)
@@ -64,7 +64,7 @@ else:
         a-=d
 print()
 # 8. Write a program that calculates and prints the sum of all numbers from 1 to n, where n is provided by the user (1 point).
-n3=input("number: ")
+n3=int(input("number: "))
 v=0
 for i in range(1,n3+1):
     v=v+i
@@ -74,12 +74,12 @@ print()
 # Generalize it from i to j.
 # 2X1=2
 # 2X2=4 and so on... (1 point).
-n4= input("number to create table for: ")
+n4= int(input("number to create table for: "))
 for i in (1,11):
     print(f"{n4}x{i}={n4*i}\n")
 print()
 # 10. Write a program to find out if the given number is prime or not (1 point).
-n5 = input("number: ")
+n5 = int(input("number: "))
 PRIME=True
 for i in range(2,n5):
     if n5%i ==0:
